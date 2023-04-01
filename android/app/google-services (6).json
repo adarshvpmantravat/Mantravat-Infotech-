@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1007457142229",
+    "project_id": "jeevika-job-posting-7f757",
+    "storage_bucket": "jeevika-job-posting-7f757.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007457142229:android:ff61995a3f598e6f5de95c",
+        "android_client_info": {
+          "package_name": "com.example.jeevika_job_posting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007457142229-vcvld1vel97hpnbkeov9fnanfta5q4m5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jeevika_job_posting",
+            "certificate_hash": "209334a07c9e4a29cdd2260a1be3275f609fc73b"
+          }
+        },
+        {
+          "client_id": "1007457142229-nntdkdhf6ii84q0uk24qch6k79ojnpuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtOYZA7Z-ISSTeBn_LHRQmJmtKfhf_vMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1007457142229-nntdkdhf6ii84q0uk24qch6k79ojnpuf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
