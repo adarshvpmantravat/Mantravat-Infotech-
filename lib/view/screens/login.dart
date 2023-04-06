@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
 
+import 'homepage.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -11,6 +13,14 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   @override
+  void validate() {
+    if (_formKey.currentState!.validate()) {
+      print("Ok");
+    } else {
+      print("Error");
+    }
+  }
+
   Widget build(BuildContext context) {
     return Container(
         decoration: const BoxDecoration(
@@ -79,7 +89,16 @@ class _LoginScreenState extends State<LoginScreen> {
                                 backgroundColor: Colors.white,
                                 child: IconButton(
                                   color: Colors.black,
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    validate();
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: ((context) =>
+                                            const MyHomePage()),
+                                      ),
+                                    );
+                                  },
                                   icon: const Icon(Icons.arrow_forward),
                                 ),
                               )
