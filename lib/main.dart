@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jeevika_job_posting/screens/splashscreen.dart';
+import 'package:jeevika_job_posting/view/screens/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Splash(),
     );
   }
