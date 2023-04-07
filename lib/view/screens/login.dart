@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:form_field_validator/form_field_validator.dart';
+import 'package:jeevika_job_posting/view/screens/register.dart';
 
 import 'homepage.dart';
 
@@ -108,22 +109,30 @@ class _LoginScreenState extends State<LoginScreen> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
+                              const Text("Don't have an Account?"),
                               TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    validate();
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: ((context) =>
+                                                const Register())));
+                                  },
                                   child: const Text(
-                                    'Sign Up',
+                                    "Sign Up",
                                     style: TextStyle(fontSize: 22),
                                   )),
-                              TextButton(
-                                  onPressed: () {},
-                                  child: const Text(
-                                    'Forgot Password?',
-                                    style: TextStyle(
-                                        decoration: TextDecoration.underline,
-                                        fontSize: 22),
-                                  ))
                             ],
                           ),
+                          TextButton(
+                              onPressed: () {},
+                              child: const Text(
+                                'Forgot Password?',
+                                style: TextStyle(
+                                    decoration: TextDecoration.underline,
+                                    fontSize: 22),
+                              ))
                         ]),
                       )
                     ]),
