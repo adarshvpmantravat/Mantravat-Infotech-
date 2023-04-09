@@ -74,7 +74,16 @@ class _LoginScreenState extends State<LoginScreen> {
                               hintText: 'Password',
                             ),
                           ),
-                          const SizedBox(height: 30),
+                          const SizedBox(height: 10),
+                          TextButton(
+                              onPressed: () {},
+                              child: const Text(
+                                'Forgot Password?',
+                                textAlign: TextAlign.left,
+                                style: TextStyle(
+                                    decoration: TextDecoration.underline,
+                                    fontSize: 16),
+                              )),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -125,14 +134,6 @@ class _LoginScreenState extends State<LoginScreen> {
                                   )),
                             ],
                           ),
-                          TextButton(
-                              onPressed: () {},
-                              child: const Text(
-                                'Forgot Password?',
-                                style: TextStyle(
-                                    decoration: TextDecoration.underline,
-                                    fontSize: 22),
-                              ))
                         ]),
                       )
                     ]),
